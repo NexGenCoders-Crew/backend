@@ -1,4 +1,7 @@
 package com.crypto.trading.repository;
 
-public interface UserRepo {
+import com.crypto.trading.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepo extends JpaRepository<User,Long> {
 }
